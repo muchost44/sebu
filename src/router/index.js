@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import LibraryView from "../views/LibraryView.vue";
+import Wishlist from "../views/Wishlist.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +11,16 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/library",
+    name: "library",
+    component: LibraryView,
+  },
+  {
+    path: "/wishlist",
+    name: "wishlist",
+    component: Wishlist,
   },
   {
     path: "/about",
