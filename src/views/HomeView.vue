@@ -9,7 +9,7 @@
       </v-card>
     </v-row>
     <v-row color="fifth">
-      <v-card color="fourth" class="pt-2 pb-3" height="400px" width="100%">
+      <v-card color="fifth" class="pt-2 pb-3" height="400px" width="100%">
         <div class="text_first text-center text-h5 font-weight-black ma-5">
           Recommended for you
         </div>
@@ -52,13 +52,6 @@
             >{{ genre }}</v-btn
           >
         </v-container>
-      </v-card>
-    </v-row>
-    <v-row>
-      <v-card color="first" height="200px" width="100%">
-        <!-- <div class="text_first text-h5 font-weight-black ma-5">
-              Footer
-            </div> -->
       </v-card>
     </v-row>
   </v-container>

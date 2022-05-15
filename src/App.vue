@@ -4,7 +4,7 @@
       <div class="small_box" @click="drawer = !drawer">
         <v-app-bar-nav-icon text color="third"></v-app-bar-nav-icon>
       </div>
-      <v-toolbar-title text class="text_white">Sebu</v-toolbar-title>
+      <v-toolbar-title text class="text_white"> Sebu </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-col cols="12" sm="6" md="4" style="display: flex; align-item: center">
         <v-text-field label="Search" solo dense color="fifth"></v-text-field>
@@ -23,7 +23,7 @@
             <v-list-item-icon>
               <v-icon>mdi-archive</v-icon>
             </v-list-item-icon>
-            <v-list-item-content>
+            <v-list-item-content @click="drawer = !drawer">
               <router-link class="router-link" to="/"> Home </router-link>
             </v-list-item-content>
           </v-list-item>
@@ -36,7 +36,7 @@
               <v-icon>mdi-archive</v-icon>
             </v-list-item-icon>
 
-            <v-list-item-content>
+            <v-list-item-content @click="drawer = !drawer">
               <router-link class="router-link" to="/library">
                 Library
               </router-link>
@@ -50,7 +50,7 @@
             <v-list-item-icon>
               <v-icon>mdi-archive</v-icon>
             </v-list-item-icon>
-            <v-list-item-content>
+            <v-list-item-content @click="drawer = !drawer">
               <router-link class="router-link" to="/wishlist">
                 Wishlist
               </router-link>
@@ -63,6 +63,11 @@
     <v-main>
       <router-view />
     </v-main>
+    <v-card color="first" height="100px" width="100%">
+      <!-- <div class="text_first text-h5 font-weight-black ma-5">
+              Footer
+            </div> -->
+    </v-card>
   </v-app>
 </template>
 

@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LibraryView from "../views/LibraryView.vue";
 import Wishlist from "../views/Wishlist.vue";
+import Detail from "../views/Detail.vue";
+import Content from "../views/Content.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +23,16 @@ const routes = [
     path: "/wishlist",
     name: "wishlist",
     component: Wishlist,
+  },
+  {
+    path: "/detail",
+    name: "detail",
+    component: Detail,
+  },
+  {
+    path: "/content",
+    name: "content",
+    component: Content,
   },
   {
     path: "/about",
