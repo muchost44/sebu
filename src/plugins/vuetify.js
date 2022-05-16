@@ -15,6 +15,7 @@ export default new Vuetify({
         fourth: "#97ebdb",
         fifth: "#daf8e3",
         sixth: "#848484",
+        white: "#FFFFFF",
       },
     },
   },

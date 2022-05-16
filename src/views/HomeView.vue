@@ -15,12 +15,14 @@
         </div>
         <v-container class="d-flex justify-space-around">
           <v-card
-            v-for="item in 4"
-            :key="item"
+            v-for="recom_book in recom_books"
+            :key="recom_book"
             height="225"
             width="150"
             color="sixth"
-          ></v-card>
+          >
+            <v-img :src="recom_book.photo"></v-img>
+          </v-card>
         </v-container>
       </v-card>
     </v-row>
@@ -29,8 +31,10 @@
         <div class="text_first text-h5 font-weight-black ma-5">Last seen</div>
         <v-container>
           <v-row>
-            <v-col v-for="item in 4" :key="item">
-              <v-card height="225" width="150" color="sixth"></v-card>
+            <v-col v-for="last_book in last_books" :key="last_book">
+              <v-card height="225" width="150" color="sixth">
+                <v-img :src="last_book.photo"></v-img>
+              </v-card>
             </v-col>
           </v-row>
         </v-container>
@@ -60,6 +64,7 @@
 
 <script>
 // import HelloWorld from "../components/HelloWorld";
+import gql from "graphql-tag";
 
 export default {
   name: "Home",
@@ -76,6 +81,34 @@ export default {
   computed: {
     listNews() {
       return this.$store.state.listNews;
+    },
+  },
+  apollo: {
+    recom_books: {
+      query() {
+        return gql`
+          {
+            recom_books: books(limit: 4) {
+              id
+              title
+              photo
+            }
+          }
+        `;
+      },
+    },
+    last_books: {
+      query() {
+        return gql`
+          {
+            last_books: books(limit: 4, offset: 4) {
+              id
+              title
+              photo
+            }
+          }
+        `;
+      },
     },
   },
 

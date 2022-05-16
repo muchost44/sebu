@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */ /* eslint-disable */
 <template>
-  <v-container fluid>
+  <v-container fluid class="pb-7">
     <v-row>
       <v-container fluid>
         <div class="text_first text-h5 font-weight-black ma-5 text-center">
