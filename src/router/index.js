@@ -25,12 +25,12 @@ const routes = [
     component: Wishlist,
   },
   {
-    path: "/detail",
+    path: "/detail/:id",
     name: "detail",
     component: Detail,
   },
   {
-    path: "/content",
+    path: "/content/:id",
     name: "content",
     component: Content,
   },

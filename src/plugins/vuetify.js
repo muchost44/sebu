@@ -16,6 +16,7 @@ export default new Vuetify({
         fifth: "#daf8e3",
         sixth: "#848484",
         white: "#FFFFFF",
+        primary: "#00c2c7",
       },
     },
   },

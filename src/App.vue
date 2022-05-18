@@ -4,10 +4,11 @@
       <!-- <div class="small_box" @click="drawer = !drawer">
         <v-app-bar-nav-icon text color="third"></v-app-bar-nav-icon>
       </div> -->
-      <v-btn @click="drawer = !drawer" tile icon large class="ml-1 mr-4"
-        ><img
+      <v-btn @click="drawer = !drawer" tile icon large class="ml-1 mr-4">
+        <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAABmJLR0QA/wD/AP+gvaeTAAACtUlEQVRYhe2ZQWsTQRSAv9ndbjFJE1OltbVV1NL2oBdFBZF60pt46tGLFBEv/gX/gsceFBXxLB4E24OH6sGKCCqIKB4qpqa2DU02kW5293lI4snZJKWbTcDvuDMw38y+fW9mR1FHRFLATeAKcBhIEC8ukAMWgTtKqRyAAhCRaeAZcCQ2vXCKwKxSakHVV/Y93SvbwAFOGdTCoNtlAVLAbSUir4Bzcdu0iGMA43FbtEHKAKy4LdrBiFugXUJX1xdh/ucai4UtHN+PVCRlmlzMZrgxMhy6iqHCc1++cT//a5fV9DzZ2ORtqczdyaPaPtrJrGxvd1S2wb38Gt+3XW27VjjnViMRaoUf7g6Ejyf2kLU6n0AGLYsTCf02RiucMk0eTB0jY5mRiP2LjGXycGqCpKn/7JSI5IARXYf1qsdyyaEcRJslkobJ2YEU+/rC32pT4W6j5wpHzwm3lAYCwBOJVkSpllYvVLjs+7xxyuTdKgHRChsohu0+TqeSJE19ZtJOSoClosOq60YuCxAgrLouS8VS6Gha4S3fp+B1vtoVPI8tz9O268Mm4pgNQymlbdMKZywrltKcNS3SO4lhBcxk0oz02RjoZ7xbGChGbZuZvenQ0VqqdD2T1hoYgB0SV52k5ypdzwk3DYn1qsfrkkMl4u1lor693N9kexna+nSjwNXPXylGfGJukDZNHk1PcHkwq+2jzRKO73No+R2FkKoTBYOWxcqZk9pThzaGP1Z+d1wWYNPz+FCpaNu1wgdtOxKhVhgLGVsrPN5vc214KBKhMOYODDHWrxcOrXQBML+aZ6EDv6oGTJNL2QzXm/yq+n8IjRqD2pvvGQxgLW6JNqga1O7BeoUXSkRGgU9AOm6bJgTABaN+wzhL7R6sWwmAW0qpl3+fiMikiDwWEUe6B1dEnovI+YbnH7E/dKswwngnAAAAAElFTkSuQmCC"
-      /></v-btn>
+        />
+      </v-btn>
       <v-toolbar-title
         text
         class="text_white pt-4"

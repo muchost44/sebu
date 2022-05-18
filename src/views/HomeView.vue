@@ -21,7 +21,13 @@
             width="150"
             color="sixth"
           >
-            <v-img :src="recom_book.photo"></v-img>
+            <router-link
+              class="router-link"
+              :to="'/detail/' + recom_book.id"
+              style="color: white"
+            >
+              <v-img height="225" width="150" :src="recom_book.photo"></v-img>
+            </router-link>
           </v-card>
         </v-container>
       </v-card>
@@ -33,7 +39,17 @@
           <v-row>
             <v-col v-for="last_book in last_books" :key="last_book">
               <v-card height="225" width="150" color="sixth">
-                <v-img :src="last_book.photo"></v-img>
+                <router-link
+                  class="router-link"
+                  :to="'/detail/' + last_book.id"
+                  style="color: white"
+                >
+                  <v-img
+                    height="225"
+                    width="150"
+                    :src="last_book.photo"
+                  ></v-img>
+                </router-link>
               </v-card>
             </v-col>
           </v-row>
